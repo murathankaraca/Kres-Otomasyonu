@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meltem.controllers.ModalController">
+    <center>
+        <VBox alignment="CENTER" spacing="50">
+            <Text fx:id="txtWarning" style="-fx-font-size: 32px; -fx-text-fill: white;">Uyarı</Text>
+            <Button onAction="#close" style="-fx-font-size: 20px;" text="Kapat">
+            <graphic>
+               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic></Button>
+        </VBox>
+    </center>
+</BorderPane>

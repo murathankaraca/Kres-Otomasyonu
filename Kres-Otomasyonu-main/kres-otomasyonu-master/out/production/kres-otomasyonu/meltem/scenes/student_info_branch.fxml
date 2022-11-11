@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" prefHeight="400.0" prefWidth="600.0" styleClass="app" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meltem.controllers.StudentInfoController">
+    <ImageView fx:id="imageView" fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+        <image>
+            <Image backgroundLoading="true" url="@../icons/students.png" />
+        </image>
+    </ImageView>
+    <VBox alignment="CENTER" style="-fx-background-color: white; -fx-border-radius: 5px;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+        </padding>
+        <BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Öğrenci Numarası</Text>
+            </left>
+            <right>
+                <Text fx:id="txtStudentId" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Öğrenci Adı</Text>
+            </left>
+            <right>
+                <Text fx:id="txtStudentName" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Öğrenci Soyadı</Text>
+            </left>
+            <right>
+                <Text fx:id="txtStudentLastName" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Oryantasyon Başlangıç</Text>
+            </left>
+            <right>
+                <Text fx:id="txtOrientationStart" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Oryantasyon Bitiş</Text>
+            </left>
+            <right>
+                <Text fx:id="txtOrientationEnd" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Veli Adı</Text>
+            </left>
+            <right>
+                <Text fx:id="txtParentName" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Veli Soyadı</Text>
+            </left>
+            <right>
+                <Text fx:id="txtParentLastName" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Veli Telefon No.</Text>
+            </left>
+            <right>
+                <Text fx:id="txtParentNumber" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Veli Email'i</Text>
+            </left>
+            <right>
+                <Text fx:id="txtParentEmail" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+    </VBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+        <children>
+            <Button onAction="#goBack">
+                <graphic>
+                    <ImageView fitHeight="35" fitWidth="35" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../icons/arrow_left.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            <font>
+               <Font size="18.0" />
+            </font>
+                Geri Dön
+            </Button>
+        </children>
+        <GridPane.margin>
+            <Insets bottom="10.0" />
+        </GridPane.margin>
+    </HBox>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints maxHeight="1.7976931348623157E308" valignment="CENTER" vgrow="ALWAYS" />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

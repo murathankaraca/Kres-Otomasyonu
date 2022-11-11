@@ -1,0 +1,9 @@
+.card {
+    -fx-background-color: white;
+    -fx-border-radius: 25;
+    -fx-padding: 25;
+}
+.card-title {
+    -fx-color: black;
+    -fx-font-size: 24;
+}

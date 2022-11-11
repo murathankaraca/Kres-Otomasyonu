@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="1.0" styleClass="app" vgap="1.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meltem.controllers.ClassroomEditController">
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+      <children>
+          <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image backgroundLoading="true" url="@../icons/classroom.png" />
+              </image>
+          </ImageView>
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+             <Text fill="WHITE" text="Sınıf Ekleme Paneli">
+               <font>
+                  <Font name="Segoe UI" size="30.0" />
+               </font></Text>
+         </VBox>
+      </children>
+   </HBox>
+    <VBox alignment="CENTER" style="-fx-background-color: white; -fx-border-radius: 5px;" GridPane.rowIndex="1" GridPane.rowSpan="13" GridPane.valignment="CENTER">
+        <padding>
+            <Insets left="25.0" right="25.0" />
+        </padding>
+        <BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" text="Sınıf Adı" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            </left>
+            <right>
+                <TextField fx:id="txtClassroomName" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            </right>
+        </BorderPane>
+      <BorderPane layoutX="35.0" layoutY="60.0" maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0">
+         <left>
+            <Text styleClass="body2" text="Öğretmen Adı" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </left>
+         <right>
+            <TextField fx:id="txtTeacherName" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+         </right>
+      </BorderPane>
+      <BorderPane layoutX="35.0" layoutY="110.0" maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0">
+         <left>
+            <Text fx:id="lblTeacher" styleClass="body2" text="Öğretmen Soyadı" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </left>
+         <right>
+            <TextField fx:id="txtTeacherLastName" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+         </right>
+      </BorderPane>
+      <BorderPane layoutX="35.0" layoutY="146.0" maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0">
+         <left>
+            <Text fx:id="lblCapacity" styleClass="body2" text="Sınıf Kontenjanı" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </left>
+         <right>
+            <TextField fx:id="txtClassroomCapacity" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+         </right>
+      </BorderPane>
+    </VBox>
+    <FlowPane alignment="CENTER" hgap="25" prefWidth="544.0" GridPane.rowIndex="15">
+        <Button onAction="#goBack">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/arrow_left.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <font>
+            <Font size="18.0" />
+         </font>
+            Geri Dön
+        </Button>
+        <Button fx:id="btnAdd" onAction="#addClassroom">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/add.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <font>
+            <Font size="18.0" />
+         </font>
+            Sınıfı Ekle
+        </Button>
+      <GridPane.margin>
+         <Insets />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+      </padding>
+    </FlowPane>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

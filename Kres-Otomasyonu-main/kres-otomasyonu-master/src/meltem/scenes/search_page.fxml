@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="2" prefHeight="300" prefWidth="300" styleClass="app" vgap="1" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meltem.controllers.SearchController">
+    <HBox alignment="CENTER" maxHeight="100.0" GridPane.columnSpan="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+        <padding>
+            <Insets bottom="15.0" top="15.0" />
+        </padding>
+        <children>
+            <Text fill="WHITE" text="Yönetici Paneli" textAlignment="CENTER">
+            <font>
+               <Font size="48.0" />
+            </font></Text>
+        </children>
+    </HBox>
+    <VBox alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: white;" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+        <Button fx:id="btnUsers" maxWidth="1.7976931348623157E308" onAction="#goUsers" text="Kullanıcı İşlem">
+            <graphic>
+                <ImageView fitHeight="65" fitWidth="65" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/lock.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+            Users
+        </Button>
+        <Button fx:id="btnStudents" maxWidth="1.7976931348623157E308" onAction="#goStudent">
+            <graphic>
+                <ImageView fitHeight="65" fitWidth="65" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/students.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+            Öğrenci İşlem
+        </Button>
+        <Button fx:id="btnTeachers" maxWidth="1.7976931348623157E308" onAction="#goTeachers">
+            <graphic>
+                <ImageView fitHeight="65" fitWidth="65" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/teacher.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+            Öğretmen İşlem
+        </Button>
+        <Button fx:id="btnClassrooms" maxWidth="1.7976931348623157E308" onAction="#goClasses">
+            <graphic>
+                <ImageView fitHeight="65" fitWidth="65" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/classroom.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+            Sınıf İşlem
+        </Button>
+        <Button fx:id="btnCourses" maxWidth="1.7976931348623157E308" onAction="#goCourses">
+            <graphic>
+                <ImageView fitHeight="65" fitWidth="65" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/courses.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+            Branş Ders İşlem
+        </Button>
+        <Button fx:id="btnMeetings" maxWidth="1.7976931348623157E308" onAction="#goMeetings">
+            <graphic>
+                <ImageView fitHeight="65" fitWidth="65" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/meetings.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+            Toplanti Kayıtları
+        </Button>
+      <Button fx:id="btnMeetings1" layoutX="25.0" layoutY="465.0" maxWidth="1.7976931348623157E308" onAction="#quit" text="Çıkış Yap">
+         <graphic>
+            <ImageView fitHeight="65" fitWidth="65" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <GridPane.margin>
+         <Insets bottom="15.0" left="25.0" right="25.0" top="15.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+      </padding>
+    </VBox>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

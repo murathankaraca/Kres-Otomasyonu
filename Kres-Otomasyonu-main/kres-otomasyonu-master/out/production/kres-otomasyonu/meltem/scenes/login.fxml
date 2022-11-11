@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10" styleClass="app" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meltem.controllers.LoginController">
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" style="-fx-background-color: white;">
+      <children>
+         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../icons/meltem.jpg" />
+            </image>
+         </ImageView>
+          <Text text="Meltem Kreş Otomasyon Sistemi">
+            <font>
+               <Font size="36.0" />
+            </font>
+         </Text>
+      </children>
+      <GridPane.margin>
+         <Insets bottom="25.0" />
+      </GridPane.margin>
+   </HBox>
+   <VBox alignment="CENTER" spacing="30.0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+      <children>
+          <Text fill="WHITE" text="Kullanıcı Adı" textAlignment="CENTER">
+            <font>
+               <Font size="24.0" />
+            </font></Text>
+          <TextField fx:id="txtUsername">
+            <font>
+               <Font size="18.0" />
+            </font></TextField>
+      </children>
+      <padding>
+         <Insets bottom="25.0" left="125.0" right="125.0" top="25.0" />
+      </padding>
+   </VBox>
+   <VBox alignment="CENTER" spacing="30.0" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+      <children>
+          <Text fill="WHITE" text="Şifre">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Text>
+          <PasswordField fx:id="txtPassword">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </PasswordField>
+      </children>
+      <padding>
+         <Insets bottom="25.0" left="125.0" right="125.0" />
+      </padding>
+   </VBox>
+    <Button onAction="#login" prefWidth="300.0" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+        <graphic>
+            <ImageView fitHeight="35" fitWidth="35" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../icons/enter.png" />
+                </image>
+            </ImageView>
+        </graphic>
+      <GridPane.margin>
+         <Insets bottom="20.0" top="20.0" />
+      </GridPane.margin>
+      <font>
+         <Font size="24.0" />
+      </font>
+        Giriş Yap
+    </Button>
+    <Hyperlink onAction="#goForgotPassword" style="-fx-text-fill: white; -fx-font-size: 24px;" text="Şifrenizi mi unuttunuz? Buraya tıklayın!" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+      <font>
+         <Font size="14.0" />
+      </font>
+      <GridPane.margin>
+         <Insets bottom="10.0" />
+      </GridPane.margin></Hyperlink>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

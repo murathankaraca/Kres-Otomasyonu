@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="1.0" prefHeight="400.0" prefWidth="600.0" styleClass="app" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meltem.controllers.TeacherEditController">
+    <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+        <image>
+            <Image backgroundLoading="true" url="@../icons/teacher.png" />
+        </image>
+    </ImageView>
+    <VBox alignment="CENTER" style="-fx-background-color: white; -fx-border-radius: 5px;" GridPane.rowIndex="10">
+        <padding>
+            <Insets left="25.0" right="25.0" />
+        </padding>
+        <BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Öğretmen Adı</Text>
+            </left>
+            <right>
+                <TextField fx:id="txtTeacherName" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Öğretmen Soyadı</Text>
+            </left>
+            <right>
+                <TextField fx:id="txtTeacherLastName" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Öğretmen Email'i</Text>
+            </left>
+            <right>
+                <TextField fx:id="txtTeacherEmail" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Öğretmen Tipi</Text>
+            </left>
+            <right>
+                <TextField fx:id="txtTeacherType" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+    </VBox>
+    <FlowPane alignment="CENTER" hgap="25" prefWidth="544.0" GridPane.rowIndex="12">
+        <Button onAction="#goBack">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/arrow_left.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            Geri Dön
+        </Button>
+        <Button fx:id="btnAdd" onAction="#goBack">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/add.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            Öğretmeni Ekle
+        </Button>
+    </FlowPane>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

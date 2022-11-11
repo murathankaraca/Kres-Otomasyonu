@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="5.0" prefHeight="400.0" prefWidth="600.0" styleClass="app" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meltem.controllers.CourseEditController">
+    <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+        <image>
+            <Image backgroundLoading="true" url="@../icons/courses.png" />
+        </image>
+    </ImageView>
+    <VBox alignment="CENTER" style="-fx-background-color: white; -fx-border-radius: 5px;" GridPane.rowIndex="10">
+        <padding>
+            <Insets left="25.0" right="25.0" />
+        </padding>
+        <BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Ders Numarası</Text>
+            </left>
+            <right>
+                <Text fx:id="txtCourseId" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Ders Adı</Text>
+            </left>
+            <right>
+                <TextField fx:id="txtCourseName" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+        <BorderPane maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+            <left>
+                <Text styleClass="body2" BorderPane.alignment="CENTER">Dersi Veren Öğretmen</Text>
+            </left>
+            <right>
+                <TextField fx:id="txtCourseTeacher" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+    </VBox>
+    <FlowPane alignment="CENTER" hgap="25" prefHeight="90.0" prefWidth="544.0" GridPane.rowIndex="12">
+        <Button onAction="#goBack">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/arrow_left.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            Geri Dön
+        </Button>
+        <Button onAction="#update">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/edit.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            Dersi Güncelle
+        </Button>
+        <Button onAction="#delete">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/delete.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            Dersi Sil
+        </Button>
+    </FlowPane>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

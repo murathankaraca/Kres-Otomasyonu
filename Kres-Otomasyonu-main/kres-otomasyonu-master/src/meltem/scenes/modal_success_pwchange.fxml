@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            style="-fx-background-color: beige;"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="400.0" prefWidth="600.0"
+            fx:controller="meltem.controllers.ModalController">
+    <center>
+        <VBox alignment="CENTER" spacing="50">
+            <Text style="-fx-font-size: 32px; -fx-text-fill: white;">Şifreniz başarıyla değişmiştir.</Text>
+            <Button onAction="#close" style="-fx-font-size: 20px;">Tamam</Button>
+        </VBox>
+    </center>
+</BorderPane>

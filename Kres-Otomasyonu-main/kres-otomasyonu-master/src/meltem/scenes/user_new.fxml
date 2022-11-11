@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="1.0" prefHeight="400.0" prefWidth="600.0" styleClass="app" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meltem.controllers.UserEditController">
+    <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+        <image>
+            <Image backgroundLoading="true" url="@../icons/user.png" />
+        </image>
+    </ImageView>
+   <VBox alignment="CENTER" style="-fx-background-color: white; -fx-border-radius: 5px;" GridPane.rowIndex="10">
+       <padding>
+           <Insets left="25.0" right="25.0" />
+       </padding>
+       <BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+           <left>
+               <Text styleClass="body2" text="Kullanıcı Adı" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+           </left>
+           <right>
+               <TextField fx:id="txtUserName" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+           </right>
+       </BorderPane>
+       <BorderPane maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0" GridPane.vgrow="ALWAYS">
+           <left>
+               <Text styleClass="body2" text="Kullanıcı Şifresi" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+           </left>
+           <right>
+               <TextField fx:id="txtPw" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+           </right>
+       </BorderPane>
+      <BorderPane layoutX="35.0" layoutY="145.0" maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0">
+         <left>
+            <Text styleClass="body2" text="Kullanıcı Yetkisi" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+         </left>
+         <right>
+            <ChoiceBox fx:id="userAuth" prefHeight="38.0" prefWidth="222.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </VBox>
+    <FlowPane alignment="CENTER" hgap="25" prefWidth="544.0" GridPane.rowIndex="12">
+        <Button onAction="#goBack">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/arrow_left.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <font>
+            <Font size="18.0" />
+         </font>
+            Geri Dön
+        </Button>
+        <Button fx:id="btnAdd" onAction="#addUser">
+            <graphic>
+                <ImageView fitHeight="35" fitWidth="35" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/add.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <font>
+            <Font size="18.0" />
+         </font>
+            Kullanıcıyı Ekle
+        </Button>
+    </FlowPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

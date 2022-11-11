@@ -1,0 +1,30 @@
+.app {
+   -fx-background-color: #00C5CD;
+}
+.body1 {
+    -fx-font-family: "Segoe UI Semilight";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+}
+.body2 {
+    -fx-font-family: "Segoe UI Semilight";
+    -fx-font-size: 18px;
+    -fx-font-weight: normal;
+    -fx-fill: black;
+}
+.header1 {
+    -fx-font-family: "Segoe UI Bold";
+    -fx-font-size: 26px;
+    -fx-fill: white;
+}
+.header2 {
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 20px;
+    -fx-fill: white;
+}
+.header3 {
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 28px;
+    -fx-fill: black;
+}
